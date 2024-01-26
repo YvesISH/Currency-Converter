@@ -52,7 +52,7 @@ class CurrencyConverterTest {
         assertEquals(1.0, exchangeRates.get("USD"));
         assertEquals(0.85, exchangeRates.get("EUR"));
 
-        // Verify that execute method was called with the correct argument
+       
         verify(mockHttpClient, times(1)).execute(any(HttpGet.class));
     }
 

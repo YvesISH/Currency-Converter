@@ -17,8 +17,8 @@ class ConverterApplicationTest {
         CurrencyConverter currencyConverter = Mockito.mock(CurrencyConverter.class);
 
         // Set up a test scenario
-        Mockito.when(currencyConverter.getExchangeRates("USD")).thenReturn(null); // Replace with your test data
-        Mockito.when(currencyConverter.convert(100.0, "USD", "EUR")).thenReturn(80.0); // Replace with your test data
+        Mockito.when(currencyConverter.getExchangeRates("USD")).thenReturn(null);
+        Mockito.when(currencyConverter.convert(100.0, "USD", "EUR")).thenReturn(80.0);
 
         // Create an instance of ConverterApplication
         ConverterApplication converterApplication = new ConverterApplication();
